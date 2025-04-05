@@ -19,14 +19,14 @@ const gameData = {
             options: [
                 {
                     id: 1,
-                    img: "images/熬夜卷.gif", // 图片路径
+                    img: "images/熬夜卷.GIF", // 图片路径
                     target: "study",            // 跳转目标场景
                     score: 10,                  // 分值变化
                     text: "通宵复习！"          // 鼠标悬停提示（可选）
                 },
                 {
                     id: 2,
-                    img: "images/眠了.gif",
+                    img: "images/眠了.GIF",
                     target: "study",
                     score: -10,
                     text: "直接躺平睡觉！"
@@ -39,14 +39,14 @@ const gameData = {
             options: [
                 {
                     id: 1,
-                    img: "images/眠了.gif", // 图片路径
+                    img: "images/眠了.GIF", // 图片路径
                     target: "teacher",            // 跳转目标场景
                     score: -10,                  // 分值变化
                     text: "眠了！"          // 鼠标悬停提示（可选）
                 },
                 {
                     id: 2,
-                    img: "images/认真听.gif",
+                    img: "images/认真听.GIF",
                     target: "DDL",
                     score: 10,
                     text: "认真听讲！"
@@ -59,14 +59,14 @@ const gameData = {
             options:[
                 {
                     id: 1,
-                    img: "images/摸鱼.gif", // 图片路径
+                    img: "images/摸鱼.GIF", // 图片路径
                     target: "DDL",            // 跳转目标场景
                     score: -10,                  // 分值变化
                     text: "开始摸鱼！"          // 鼠标悬停提示（可选）
                 },
                 {
                     id: 2,
-                    img: "images/认真听.gif",
+                    img: "images/认真听.GIF",
                     target: "DDL",
                     score: 10,
                     text: "认真听讲！"
@@ -80,7 +80,7 @@ const gameData = {
             options: [
                 {
                     id: 1,
-                    img: "images/鼠了.gif", // 图片路径
+                    img: "images/鼠了.GIF", // 图片路径
                     target: "DDL",            // 跳转目标场景
                     score: -10,                  // 分值变化
                     text: " "          // 鼠标悬停提示（可选）
@@ -93,14 +93,14 @@ const gameData = {
             options:[
                 {
                     id: 1,
-                    img: "images/赶due.gif", // 图片路径
+                    img: "images/赶due.GIF", // 图片路径
                     target: "Play_outside",            // 跳转目标场景
                     score: 10,                  // 分值变化
                     text: "开赶！"          // 鼠标悬停提示（可选）
                 },
                 {
                     id: 2,
-                    img: "images/拖延.gif",
+                    img: "images/拖延.GIF",
                     target: "DDL_yesterday",
                     score: -10,
                     text: "拖延！"
@@ -113,7 +113,7 @@ const gameData = {
             options: [
                 {
                     id: 1,
-                    img: "images/错过DDL.gif", // 图片路径
+                    img: "images/错过DDL.GIF", // 图片路径
                     target: "Play_outside",            // 跳转目标场景
                     score: -10,                  // 分值变化
                     text: " "          // 鼠标悬停提示（可选）
@@ -126,14 +126,14 @@ const gameData = {
             options:[
                 {
                     id: 1,
-                    img: "images/会会crush.gif", // 图片路径
+                    img: "images/会会crush.GIF", // 图片路径
                     target: "Little_Red_Book",            // 跳转目标场景
                     score: -10,                  // 分值变化
                     text: "欣然同意"          // 鼠标悬停提示（可选）
                 },
                 {
                     id: 2,
-                    img: "images/一心向学.gif",
+                    img: "images/一心向学.GIF",
                     target: "Little_Red_Book",
                     score: 10,
                     text: "一心向学"
@@ -146,14 +146,14 @@ const gameData = {
             options:[
                 {
                     id: 1,
-                    img: "images/一心向学.gif", // 图片路径
+                    img: "images/一心向学.GIF", // 图片路径
                     target: "Test_Tomorrow",            // 跳转目标场景
                     score: 10,                  // 分值变化
                     text: "一心向学"          // 鼠标悬停提示（可选）
                 },
                 {
                     id: 2,
-                    img: "images/刷小红薯.gif",
+                    img: "images/刷小红薯.GIF",
                     target: "Test_Tomorrow",
                     score: -10,
                     text: "继续刷"
@@ -166,21 +166,21 @@ const gameData = {
             options:[
                 {
                     id: 1,
-                    img: "images/抱佛脚.gif", // 图片路径
+                    img: "images/抱佛脚.GIF", // 图片路径
                     target: "final_ending",            // 跳转目标场景
                     score: 5,                  // 分值变化
                     text: "抱佛脚"          // 鼠标悬停提示（可选）
                 },
                 {
                     id: 2,
-                    img: "images/拜三拜.gif",
+                    img: "images/拜三拜.GIF",
                     target: "final_ending",
                     score: 5,
                     text: "拜三拜"
                  },
                  {
                     id:3,
-                    img:"images/眠了.gif",
+                    img:"images/眠了.GIF",
                     target:"final_ending",
                     score:-5,
                     text:"眠了"
@@ -349,11 +349,11 @@ function calculateGrade(score) {
     
     let grade, comment, gif;
     if (normalized >= 80) {
-      grade = 'A'; comment = '生存大师！';gif = 'images/卷王.gif'; 
+      grade = 'A'; comment = '生存大师！';gif = 'images/卷王.GIF'; 
     } else if (normalized >= 60) {
-      grade = 'B'; comment = '勉强过关';gif = 'images/苟着.gif'; 
+      grade = 'B'; comment = '勉强过关';gif = 'images/苟着.GIF'; 
     } else {
-      grade = 'C'; comment = '下次加油';gif = 'images/鼠了.gif'; 
+      grade = 'C'; comment = '下次加油';gif = 'images/鼠了.GIF'; 
     }
     
     return { grade, comment,gif};
