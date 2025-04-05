@@ -345,3 +345,20 @@ body {
     position: relative;
     z-index: 1; /* 确保按钮在gif上层 */
 }
+/* 手机端基础适配 */
+@media (max-width: 480px) {
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem; }
+  .back-btn, .control-btn {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* 平板端适配 */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .character-page, .creation-container {
+    margin: 30px auto;
+    padding: 1.5rem;
+  }
+}
